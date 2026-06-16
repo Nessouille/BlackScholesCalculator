@@ -1,11 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-Vanna-Volga Smile Correction for Exotic Options
-Applies volatility smile corrections to Black-Scholes prices
-Author: Sandy Herho
-License: WTFPL - Do What The F*** You Want To Public License
-"""
+
 
 import numpy as np
 from scipy import stats
@@ -228,21 +221,21 @@ The method uses three reference volatilities:
   • 25Δ Call: Volatility for 25-delta call strike
   • 25Δ Put: Volatility for 25-delta put strike
 
-This allows the model to capture smile effects without explicit smile parametrization.
+This allows the model to capture smile effects without explicit smile parametrisation.
 
 ADVANTAGES:
 ───────────
-✓ Simple and intuitive
-✓ Requires only three volatility quotes
-✓ Captures first and second-order smile effects
-✓ Computationally efficient
-✓ Works well for moderate moneyness levels
+ Simple and intuitive
+ Requires only three volatility quotes
+ Captures first and second-order smile effects
+ Computationally efficient
+ Works well for moderate moneyness levels
 
 LIMITATIONS:
 ────────────
-✗ Linear approximation (breaks down for large smiles)
-✗ Assumes specific smile shape
-✗ Not ideal for extreme OTM options
-✗ Does not capture term structure of volatility
+ Linear approximation (breaks down for large smiles)
+ Assumes specific smile shape
+ Not ideal for extreme OTM options
+ Does not capture term structure of volatility
     """
     return explanation

@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-Interactive Black-Scholes Option Pricing Model
-Author: Sandy Herho
-License: WTFPL - Do What The F*** You Want To Public License
-"""
+
 
 import numpy as np
 import pandas as pd
